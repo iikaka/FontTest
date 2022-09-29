@@ -33,12 +33,40 @@ let arr=[1,1,2,3,4,3,1,5,6]
 // })
 
 //filter+indexOf---2
-let result=[]
-arr.filter((item,index)=>{
-    if(arr.indexOf(item)==index){
-        result.push(item)
-    }
-})
+// let result=[]
+// arr.filter((item,index)=>{
+//     if(arr.indexOf(item)==index){
+//         result.push(item)
+//     }
+// })
 
+//sort
+// let result=[]
+// let temp=arr.sort();
+// console.log(temp);
+// for(let i =0;i<temp.length;i++){
+//     if(temp[i]!==temp[i+1]){
+//         result.push(temp[i])
+//     }
+// }
+
+
+// for循环+splice方法
+// for(let i=0;i<arr.length;i++){
+//     for(j=i+1;j<arr.length;j++){
+//         if(arr[i]==arr[j]){
+//             arr.splice(j,1)
+//         }
+//     }
+// }
+// console.log(arr);
+
+//include
+let result=[]
+for(let i in arr){
+    if(!result.includes(arr[i])){
+        result.push(arr[i])
+    }
+}
 
 console.log(result);
