@@ -62,11 +62,11 @@ let arr=[1,1,2,3,4,3,1,5,6]
 // console.log(arr);
 
 //include
-let result=[]
-for(let i in arr){
-    if(!result.includes(arr[i])){
-        result.push(arr[i])
-    }
-}
+// let result=[]
+// for(let i in arr){
+//     if(!result.includes(arr[i])){
+//         result.push(arr[i])
+//     }
+// }
 
 console.log(result);
